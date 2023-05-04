@@ -1,0 +1,70 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+
+    {# <h2 class="text-center mt-2">Notre objectif : <br>Démocratiser l'accès aux conseils d'un Architecte diplômé d'État</h2> #}
+    <div class="d-flex text-center justify-content-center mt-5">
+        <figure>
+            <img src="{{ asset('images/home/logo_mini.png') }}" alt="logo societe" width="300vw" height="150vh">
+            <figcaption>
+                <p>Thierry Jacotet</p>
+                <p>Société CODE CONCEPTION DESIGN</p>
+            </figcaption>
+        </figure>
+    </div>
+    <hr>
+    <div>
+        <h1>Comment un conseil peut vous apporter plus que vous ne croyez : </h1>
+            <div>
+                <video id="intro" controls width="500vw" height="300vh" autoplay class="justify-content-center homeVideo">
+                    <source src="{{ asset('videos/home/shilingck_en.mp4') }}" type="Video/mp4">
+                </video>
+                <p class="text-center mt-3">Téléphone : 06 63 77 88 25</p>
+                <p class="text-center">Email : <a href="mailto:thierry.jacotet@gmail.com">thierry.jacotet@gmail.com</a></p>
+            </div>
+            <br>
+        <hr>
+        <h2>Nos services :</h2>
+        <div class="container row d-flex justify-content-center p-4" width="30vw" height="10wh">
+            {% for categorie in categories %}
+                {% if categorie.nom is not null %}
+                    <div class="d-flex col-3 justify-content-center">
+                        <div class="img-taille-service-mission">
+                            <div class="img-texte">
+                                <a href="{{ path('app_categorie', {id: categorie.id}) }}"><p class="img-service-text cat-div">{{ categorie.nom }}</p></a>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            {# <div class="d-flex col-12 justify-content-center">
+                <div class="img-taille-service-mission">
+                    <div class="img-texte">
+                        <a href="#"><p class="img-service-text">Missions</p></a>
+                    </div>
+                </div>
+                <div class="img-taille-service-discount">
+                    <div class="img-texte-double">
+                        <a href="#"><p class="img-service-text">Mission Discount</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex col-12 justify-content-center img-service-copro">
+                <div class="img-taille-service">
+                    <div class="img-texte">
+                        <a href="#"><p class="img-service-text">Copropriétés</p></a>
+                    </div>
+                </div>
+                <div class="img-taille-service">
+                    <div>
+                        <img src="{{ asset('images/home/logo_mini.png') }}" width="200px" height="200px" alt="logo société CODE CONCEPTION DESIGN">
+                    </div>
+                </div>
+            </div> #}
+        </div>
+        <br>
+    </div>
+
+{% endblock %}

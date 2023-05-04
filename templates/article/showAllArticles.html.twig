@@ -1,0 +1,23 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %} {% endblock %}
+
+{% block content %} 
+
+    {% for article in articles %}
+        <div class="card">
+            <h1>{{ article.titre }}</h1>
+            {% if article.categories is not empty %}
+                {% for categorie in article.categories %}
+                    <h2>{{ categorie.nom }}</h2>            
+                {% endfor %}
+            {% endif %}
+
+            {% if article.image is not null %}
+                <img src="{{ asset('images/articles/' ~ article.image) }}" class="img-fluid m-3" alt="{{ article.titre }}" style="width: 15%">
+            {% endif %}
+            <br>
+            <p>{{ article.contenu }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

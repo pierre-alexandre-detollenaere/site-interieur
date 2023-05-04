@@ -1,0 +1,33 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Liste des catégories des services/prestations{% endblock %}
+
+{% block content %}
+<h1>Liste des catégories des services/prestations : </h1>
+    <hr>
+    <table class="table table-bordered text-center">
+        <thead class="bg-primary tableau-recap">
+            <tr class="tableau-recap">
+                <th>Nom des Catégories</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for categorie in categories %}
+                <tr>
+                    <td class="texte-tableau-recap">{{ categorie.nom }}</td>
+                    <td class="texte-tableau-recap">
+                        <a href="{{ path('admin_app_categorie_update', {id: categorie.id}) }}">
+                            <i class="fas fa-edit mx-1 text-success"></i>
+                        </a>
+                        <a href="{{ path('admin_app_categorie_delete', {id: categorie.id}) }}">
+                            <i class="fas fa-trash text-danger"></i>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

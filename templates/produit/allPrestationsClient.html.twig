@@ -1,0 +1,20 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Toutes nos Prestations {% endblock %}
+
+{% block content %}
+
+<h1 class="text-center m5">Toutes nos Prestations :</h1>
+
+<div class="d-flex flex-wrap">
+    {% for produit in produits %}
+        <div class="card-prestations text-center">
+            <h3 class="p-2">{{produit.titre}}</h3>
+            <p>{{ produit.description }}</p>
+            <p>Tarif : {{ produit.prix }} €/h TTC</p>
+            <button type="button" class="btn-panier m-5"><a href="{{ path('app_panier_add', {id: produit.id}) }}">Ajouter au Panier</a></button>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}

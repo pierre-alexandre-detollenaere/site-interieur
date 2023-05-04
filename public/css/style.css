@@ -1,0 +1,274 @@
+
+:root {
+    --bs-themeColor: #CECECE; /* perle */
+    --bs-btnColor: #a7aaa5;
+    --bs-testColor: #bdc5b7;
+    --bs-linkColor: #000;
+    --bs-profileColor: #767776;
+}
+
+/* ------------------------------ Header personnalisé ------------------------------ */
+
+.themeColor {
+    background-color: var(--bs-themeColor);
+}
+
+.nav-log {
+    background-color: var(--bs-btnColor);
+}
+
+.nav-log:hover {
+    background-color: var(--bs-btnColor);
+    font-weight: bold;
+    font-size:0.8rem;
+}
+
+.nav-log a {
+    color: var(--bs-linkColor);
+}
+
+.nav-head a {
+    color:var(--bs-linkColor);
+    font-size: 1.1rem !important;
+}
+
+.nav-head a:hover {
+    font-size: 1.2rem !important;
+}
+
+.nav-accueil {
+    color: var(--bs-linkColor)!important;
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.btn-panier {
+    border: 1px outset var(--bs-testColor);
+    border-radius: 5px!important;
+    background-color: var(--bs-btnColor);
+    margin : auto 2.5rem auto 0.5rem;
+    width: 8vw;
+    height: 4vh;
+    min-width: 135px;
+}
+
+.btn-panier:hover {
+    background-color: var(--bs-btnColor);
+}
+
+.btn-panier:active {
+    border: 1px inset var(--bs-testColor);
+    background-color: var(--bs-btnColor)!important;
+}
+
+.nav-btn {
+    border: 1px outset var(--bs-testColor);
+    border-radius: 5px!important;
+    background-color: var(--bs-btnColor);
+    margin-left: 2rem;
+    padding : 0.5rem 2.5rem;
+    width: 8vw;
+    height: 4vh;
+    min-width: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    
+}
+
+.nav-btn:hover{
+    font-size: 1.1rem !important;
+    font-weight: bold;
+    background-color: var(--bs-btnColor);
+}
+
+.nav-btn:active {
+    border: 1px inset var(--bs-testColor);
+    background-color: var(--bs-btnColor);
+}
+
+.login-msg {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.profile {
+    font-size: 3rem;
+    width: auto;
+    color: var(--bs-profileColor);
+}
+
+/* ------------------------------ fin Header personnalisé ------------------------------ */
+
+/* ------------------------------ Footer personnalisé ------------------------------ */
+
+.container-footer {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+/* ------------------------------ fin Footer personnalisé ------------------------------ */
+
+/* ------- début login ------- */
+
+.connexion{
+    margin : 2.5rem auto;
+    width: 30vw;
+    min-width: 400px;
+    border: 1px solid var(--bs-themeColor);
+}
+
+#return-home {
+    margin-left: 2rem;
+    font-size: 1.1rem;
+}
+
+/* ------- fin login ------- */
+
+/* ------------------------------ Page Accueil personnalisée ------------------------------ */
+
+.homeVideo {
+    display: flex;
+    margin: 0rem auto;
+}
+
+/* ------- début Photos/textes personnalisés ------- */
+
+.img-texte {
+    margin: 70px 3px;
+}
+
+/* .img-texte-double {
+    margin: 50px 3px;
+} */
+
+.img-service-text {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.img-taille-service-mission {
+    width: 200px;
+    height: 200px;
+    border: 2px var(--bs-btnColor) solid;
+    position: relative;
+    margin: 1vh 1vw;
+}
+
+.img-taille-service-mission::before {
+    content: '';
+    background: url('../images/home/interieur_1.png') fixed 0 0;
+    -webkit-filter: blur(5px);
+           -moz-filter: blur(5px);
+            -ms-filter: blur(5px);
+             -o-filter: blur(5px);
+                filter: blur(5px);
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;    
+    z-index: -1;
+    background-size: contain;
+}
+
+.img-taille-service-mission:hover {
+    width: 220px;
+    height: 210px;
+    border: 2px var(--bs-btnColor) solid;
+    position: relative;
+    margin: 1vh 1vw;
+}
+
+.cat-div:hover {
+    font-size: 2.1rem !important;
+}
+
+/* ------- fin Photos/textes personnalisés ------- */
+
+/* ------------------------------ fin Page Accueil personnalisée ------------------------------ */
+
+/* ------- début tableaux récapitulatifs ------- */
+
+.tableau-recap {
+    color: var(--bs-themeColor);
+}
+
+.texte-tableau-recap{
+    padding: 2.5rem!important;
+}
+
+h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem!important;
+
+}
+
+/* ------- fin tableaux récapitulatifs ------- */
+
+
+/* ------- début Panier personnalisé ------- */
+
+.card-produit {
+    margin: 1rem!important;
+    width: 40vw;
+    max-width: 30rem;
+}
+
+.panier-total {
+    width: 25vw;
+    display: flex!important;
+    padding-top: 5rem!important;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* ------- fin Panier personnalisé ------- */
+
+/* ------- début Cards "Toutes nos prestations" personnalisées ------- */
+
+.card-prestations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 20vw;
+    border: 1px solid var(--bs-themeColor);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.btn-adjust {
+    margin: 0rem 30vw 1rem 30vw;
+    height: auto;
+    min-height: 2.5rem;
+}
+
+
+/* ------- fin Cards "Toutes nos prestations" personnalisées ------- */
+
+/* ------- début Page Realisations personnalisée ------- */
+
+.realisations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img-realisation {
+    width: 20vw;
+    height: 35vh;
+    margin: 2rem auto;
+}
+
+
+/* ------- fin Page Realisations personnalisée ------- */

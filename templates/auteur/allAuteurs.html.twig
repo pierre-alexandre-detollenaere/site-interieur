@@ -1,0 +1,41 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Liste des auteurs{% endblock %}
+
+{% block content %}
+<h1>Liste des auteurs des articles : </h1>
+    <hr>
+    <table class="table table-bordered text-center">
+        <thead class="bg-primary tableau-recap">
+            <tr>
+                <th style="width: 25%">Photo/image</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for auteur in auteurs %}
+                <tr>
+                    <td>
+                        {% if auteur.image is not null %}
+                            <img src="{{ asset('images/auteurs/' ~ auteur.image) }}" class="img-fluid m-3" alt="{{ auteur.fullName }}" style="width: 15%">
+                        {% endif %}
+                    </td>
+                    <td class="texte-tableau-recap">{{ auteur.nom }}</td>
+                    <td class="texte-tableau-recap">{{ auteur.prenom }}</td>
+                    <td class="texte-tableau-recap">
+                        <a href="{{ path('admin_app_auteur_update', {id: auteur.id}) }}">
+                            <i class="fas fa-edit mx-1 text-success"></i>
+                        </a>
+                        <a href="{{ path('admin_app_auteur_delete', {id: auteur.id}) }}">
+                            <i class="fas fa-trash text-danger"></i>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

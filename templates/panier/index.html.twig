@@ -1,0 +1,88 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Panier{% endblock %}
+
+{% block content %}
+<section class="h-100 h-custom" style="background-color: #eee;">
+	<div class="container py-5 h-100">
+		<div class="row d-flex justify-content-center align-items-center h-100">
+			<div class="col">
+				<div class="card">
+					<div class="card-body p-4">
+						<div class="row">
+							<div class="col-lg-7">
+								<h5 class="mb-3">
+									<a href="{{ path('app_prestations_client') }} " class="text-body">
+										<i class="fas fa-long-arrow-alt-left me-2"></i>
+										Retourner aux Prestations
+									</a>
+								</h5>
+								<hr>
+                                {% if dataPanier is not empty %}
+                                {% for data in dataPanier %}
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    {# <div>
+                                                        <img src="{{ asset('photos/produit/' ~ data.produit.photo) }}" class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+                                                    </div> #}
+                                                    <div class="ms-3">
+                                                        <h5>{{ data.produit.titre }}</h5>
+                                                        <p class="small mb-0">Description : {{ data.produit.description }}</p>
+                                                        <p class="small mb-0">Tarif : {{ data.produit.prix }} €</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div style="width: 50px;">
+                                                        <h6 class="fw-normal mb-0">
+                                                            {{ data.produit.prix }}€</h6>
+                                                    </div>
+                                                    <div style="width: 50px;">
+                                                        <h6 class="fw-normal mb-0">x{{ data.quantite }}</h6>
+                                                    </div>
+                                                    <div style="width: 80px;">
+                                                        <h5 class="mb-0">{{ data.quantite * data.produit.prix }}€</h5>
+                                                    </div>
+                                                    <a href="{{ path('app_panier_delete_product', {id: data.produit.id}) }}" style="color: #cecece;">
+                                                        <i class="fas fa-trash-alt text-danger"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                                {% else %}
+                                    <div class="alert themeColor text-center text-black">
+                                        <p>Votre panier est vide.</p>
+                                    </div>
+                                {% endif %}
+							</div>
+							<div class="col-lg-5">
+								<div class="card-produit themeColor text-white rounded-3">
+									<div class="d-flex justify-content-between m-1 panier-total row">
+										<p class="mb-2 col-6">Total</p>
+										<p class="mb-2 col-6">{{ total }}€ TTC</p>
+									</div>
+									<div class="text-center">
+										<button type="button" class="btn btn-panier btn-block btn-lg m-5">
+											<div class="d-flex justify-content-between">
+												<a href="{{ path('app_commander') }}">
+													<span>Commander
+														<i class="fas fa-long-arrow-alt-right ms-2"></i>
+													</span>
+												</a>
+											</div>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

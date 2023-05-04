@@ -1,0 +1,28 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Fiche Produit{% endblock %}
+
+{% block content %}
+
+    <h1 class="text-center m-5">Fiche Prestation</h1>
+    <div>
+        <h2 class="text-center m-1 auto">{{ produit.titre }}</h2>
+        <hr>
+        <br>
+        <table class="table table-bordered text-center">
+            <thead class="bg-primary tableau-recap">
+                <tr>
+                    <th>Description</th>
+                    <th>Tarif TTC/heure (€)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ produit.description }}</td>
+                    <td>{{ produit.prix }} €</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+{% endblock content %}

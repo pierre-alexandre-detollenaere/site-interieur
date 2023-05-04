@@ -1,0 +1,32 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Mon profil{% endblock %}
+
+{% block content %}
+
+<h1>Mon profil 
+   {% if is_granted('ROLE_ADMIN') %}
+      Administrateur
+   {% else %}
+      Client
+   {% endif %}
+</h1>
+   
+   {% if is_granted("IS_AUTHENTICATED_FULLY") %}
+      <p>Nom : {{ app.user.nom }}</p>
+      <p>Prénom : {{ app.user.prenom }}</p>
+      <p>Email : {{ app.user.email }}</p>
+      <p>Téléphone : {{ app.user.telephone }}</p>
+   {% endif %}
+
+   {% if not is_granted("IS_AUTHENTICATED_FULLY") %}
+      <div class="alert alert-secondary m-2 text-center">
+      <p>Veuillez vous <a href="{{ path("app_login") }}"><strong>connecter</strong></a> afin d'accéder aux informations de votre profil<p>
+      </div>
+   {% endif %}
+   {# {{ dump(app.user.nom) }}
+   {{ dump(app.user.prenom) }}
+   {{ dump(app.user.email) }}
+   {{ dump(app.user.telephone) }} #}
+
+{% endblock content %}

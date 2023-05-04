@@ -1,0 +1,40 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Liste des commandes{% endblock %}
+
+{% block content %}
+
+    <h1>Liste des commandes client</h1>
+    <hr>
+    <table class="table bordered" id="table-utilisateurs">
+        <thead>
+            <tr>
+                <th>Client</th>
+                <th>Email</th>
+                <th>Telephone</th>
+                <th>Date de commande</th>
+                <th>Prestation</th>
+                <th>Montant TTC</th>
+            </tr>
+            <tr>
+                <th><input onchange="filtrerTableau()" type="search" id="nom-utilisateur" placeholder="Nom de l'utilisateur"class="20vw"></input></th>
+                <th><button onclick="filtrerTableau()" class="nav-btn">Filtrer</button></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for commande in commandes %}
+            {% for detail in commande.commandeDetails %}
+                <tr>
+                    <td>{{ commande.user.nom }}</td>
+                    <td>{{ commande.user.email }}</td>
+                    <td>{{ commande.user.telephone }}</td>
+                    <td>{{ commande.dateDeCommande|date('Y-m-d')}}</td>
+                    <td>{{ detail.produit.titre }}</td>
+                    <td>{{ detail.produit.prix }} €</td>
+                </tr>
+            {% endfor %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
