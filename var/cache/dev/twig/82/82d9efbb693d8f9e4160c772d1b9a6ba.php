@@ -221,6 +221,6 @@ class __TwigTemplate_9c813e651ae3c71605d9fec57502c86f extends Template
         <p>{{ article.contenu }}</p>
     </div>
 
-{% endblock %}", "article/oneArticle.html.twig", "C:\\wamp64\\www\\dwwm-doranco\\Symfony\\site_interieur\\templates\\article\\oneArticle.html.twig");
+{% endblock %}", "article/oneArticle.html.twig", "C:\\Users\\padet\\Desktop\\site_interieur\\templates\\article\\oneArticle.html.twig");
     }
 }

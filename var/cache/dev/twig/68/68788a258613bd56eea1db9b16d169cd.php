@@ -189,6 +189,6 @@ class __TwigTemplate_3c74daa7523ac99d288f5c891e023ffc extends Template
         </tbody>
     </table>
 
-{% endblock %}", "categorie/allCategories.html.twig", "C:\\wamp64\\www\\dwwm-doranco\\Symfony\\site_interieur\\templates\\categorie\\allCategories.html.twig");
+{% endblock %}", "categorie/allCategories.html.twig", "C:\\Users\\padet\\Desktop\\site_interieur\\templates\\categorie\\allCategories.html.twig");
     }
 }

@@ -869,6 +869,6 @@ class __TwigTemplate_6a580c5501acd6f12f19d6289cf595ed extends Template
         </table>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/config.html.twig", "C:\\wamp64\\www\\dwwm-doranco\\Symfony\\site_interieur\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\config.html.twig");
+", "@WebProfiler/Collector/config.html.twig", "C:\\Users\\padet\\Desktop\\site_interieur\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\config.html.twig");
     }
 }

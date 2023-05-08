@@ -189,6 +189,6 @@ class __TwigTemplate_854268561658462992d4a6d4aba3f2b8 extends Template
             <p>{{ article.contenu }}</p>
         </div>
     {% endfor %}
-{% endblock %}", "article/showAllArticles.html.twig", "C:\\wamp64\\www\\dwwm-doranco\\Symfony\\site_interieur\\templates\\article\\showAllArticles.html.twig");
+{% endblock %}", "article/showAllArticles.html.twig", "C:\\Users\\padet\\Desktop\\site_interieur\\templates\\article\\showAllArticles.html.twig");
     }
 }

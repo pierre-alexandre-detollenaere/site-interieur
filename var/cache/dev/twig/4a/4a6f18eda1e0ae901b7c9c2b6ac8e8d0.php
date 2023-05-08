@@ -222,6 +222,6 @@ class __TwigTemplate_c4ef26880410dbc7607083275ef23611 extends Template
     </table>
 
 {% endblock %}
-", "commande/allCommandes.html.twig", "C:\\wamp64\\www\\dwwm-doranco\\Symfony\\site_interieur\\templates\\commande\\allCommandes.html.twig");
+", "commande/allCommandes.html.twig", "C:\\Users\\padet\\Desktop\\site_interieur\\templates\\commande\\allCommandes.html.twig");
     }
 }

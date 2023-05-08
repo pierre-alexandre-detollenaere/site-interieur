@@ -133,6 +133,6 @@ class __TwigTemplate_4555a70e344c8f09bce2c06af6183695 extends Template
         {{ form(formProduit) }}
     </div>
     
-{% endblock %}", "produit/formulaireProduit.html.twig", "C:\\wamp64\\www\\dwwm-doranco\\Symfony\\site_interieur\\templates\\produit\\formulaireProduit.html.twig");
+{% endblock %}", "produit/formulaireProduit.html.twig", "C:\\Users\\padet\\Desktop\\site_interieur\\templates\\produit\\formulaireProduit.html.twig");
     }
 }

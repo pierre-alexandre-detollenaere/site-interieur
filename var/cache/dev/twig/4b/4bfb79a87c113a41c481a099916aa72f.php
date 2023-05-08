@@ -326,6 +326,6 @@ class __TwigTemplate_c09d04f6c10b6e8dd896218a9c852cd4 extends Template
 </section>
 
 {% endblock %}
-", "panier/index.html.twig", "C:\\wamp64\\www\\dwwm-doranco\\Symfony\\site_interieur\\templates\\panier\\index.html.twig");
+", "panier/index.html.twig", "C:\\Users\\padet\\Desktop\\site_interieur\\templates\\panier\\index.html.twig");
     }
 }

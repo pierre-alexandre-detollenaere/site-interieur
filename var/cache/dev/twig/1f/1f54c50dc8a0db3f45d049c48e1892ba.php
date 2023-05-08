@@ -435,6 +435,6 @@ class __TwigTemplate_597fe42293438d6922cc8a7c81c54a97 extends Template
 </footer>
 
 
-{% endblock body %}", "layout.html.twig", "C:\\wamp64\\www\\dwwm-doranco\\Symfony\\site_interieur\\templates\\layout.html.twig");
+{% endblock body %}", "layout.html.twig", "C:\\Users\\padet\\Desktop\\site_interieur\\templates\\layout.html.twig");
     }
 }

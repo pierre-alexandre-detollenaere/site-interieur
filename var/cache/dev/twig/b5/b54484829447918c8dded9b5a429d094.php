@@ -248,6 +248,6 @@ class __TwigTemplate_2739d08cc8c2b8f92e92cdbfb6492d3e extends Template
         <br>
     </div>
 
-{% endblock %}", "home.html.twig", "C:\\wamp64\\www\\dwwm-doranco\\Symfony\\site_interieur\\templates\\home.html.twig");
+{% endblock %}", "home.html.twig", "C:\\Users\\padet\\Desktop\\site_interieur\\templates\\home.html.twig");
     }
 }

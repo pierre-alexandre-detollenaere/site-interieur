@@ -166,6 +166,6 @@ class __TwigTemplate_884264a6b7f7033102d77f46cbb5096e extends Template
     {% endfor %}
 </div>
 
-{% endblock content %}", "produit/allPrestationsClient.html.twig", "C:\\wamp64\\www\\dwwm-doranco\\Symfony\\site_interieur\\templates\\produit\\allPrestationsClient.html.twig");
+{% endblock content %}", "produit/allPrestationsClient.html.twig", "C:\\Users\\padet\\Desktop\\site_interieur\\templates\\produit\\allPrestationsClient.html.twig");
     }
 }

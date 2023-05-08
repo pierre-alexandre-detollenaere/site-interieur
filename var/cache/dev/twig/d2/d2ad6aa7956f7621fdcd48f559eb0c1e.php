@@ -225,6 +225,6 @@ class __TwigTemplate_4fc0e85ff86a6bc9539e1efe43c86155 extends Template
         </tbody>
     </table>
 
-{% endblock %}", "produit/allProduits.html.twig", "C:\\wamp64\\www\\dwwm-doranco\\Symfony\\site_interieur\\templates\\produit\\allProduits.html.twig");
+{% endblock %}", "produit/allProduits.html.twig", "C:\\Users\\padet\\Desktop\\site_interieur\\templates\\produit\\allProduits.html.twig");
     }
 }

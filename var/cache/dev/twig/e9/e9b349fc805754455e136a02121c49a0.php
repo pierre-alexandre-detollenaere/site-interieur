@@ -177,6 +177,6 @@ class __TwigTemplate_a9e1f6d8dcc2d5d1459ddbb84ffb3533 extends Template
         {{ form_end(registrationForm) }}
         </div>
 {% endblock %}
-", "registration/register.html.twig", "C:\\wamp64\\www\\dwwm-doranco\\Symfony\\site_interieur\\templates\\registration\\register.html.twig");
+", "registration/register.html.twig", "C:\\Users\\padet\\Desktop\\site_interieur\\templates\\registration\\register.html.twig");
     }
 }

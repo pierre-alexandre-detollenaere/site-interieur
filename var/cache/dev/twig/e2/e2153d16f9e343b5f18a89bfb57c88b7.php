@@ -154,6 +154,6 @@ class __TwigTemplate_4277cd14fc6cc021d75a5c5477a353b8 extends Template
     </ul>
 </div>
 {% endblock %}
-", "admin/index.html.twig", "C:\\wamp64\\www\\dwwm-doranco\\Symfony\\site_interieur\\templates\\admin\\index.html.twig");
+", "admin/index.html.twig", "C:\\Users\\padet\\Desktop\\site_interieur\\templates\\admin\\index.html.twig");
     }
 }
